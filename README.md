@@ -1,6 +1,6 @@
-# Pasta
-
 [![Twitter Follow](https://img.shields.io/twitter/follow/widowicaksono.svg?style=social)](https://twitter.com/widowicaksono)
+
+# Pasta
 
 Pasta is a website that let customers order directly from website with an easy way.
 
