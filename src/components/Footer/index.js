@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaGithub, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import {
   FooterContainer,
   FooterWrap,
@@ -25,15 +19,15 @@ const Footer = () => {
             <SocialLogo to="/">Pasta</SocialLogo>
             <SocialIcons>
               <SocialIconLink
-                href="/"
+                href="https://github.com/clovds"
                 target="_blank"
-                aria-label="facebook"
+                aria-label="github"
                 rel="noopener"
               >
-                <FaFacebook />
+                <FaGithub />
               </SocialIconLink>
               <SocialIconLink
-                href="/"
+                href="http://instagram.com/widowicaksono"
                 target="_blank"
                 aria-label="instagram"
                 rel="noopener"
@@ -41,25 +35,17 @@ const Footer = () => {
                 <FaInstagram />
               </SocialIconLink>
               <SocialIconLink
-                href="/"
+                href="https://twitter.com/widowicaksono"
                 target="_blank"
-                aria-label="Youtube"
-                rel="noopener"
-              >
-                <FaYoutube />
-              </SocialIconLink>
-              <SocialIconLink
-                href="/"
-                target="_blank"
-                aria-label="facebook"
+                aria-label="twitter"
                 rel="noopener"
               >
                 <FaTwitter />
               </SocialIconLink>
               <SocialIconLink
-                href="/"
+                href="https://www.linkedin.com/in/widowicaksono/"
                 target="_blank"
-                aria-label="facebook"
+                aria-label="linkedin"
                 rel="noopener"
               >
                 <FaLinkedin />

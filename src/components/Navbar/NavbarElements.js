@@ -3,7 +3,12 @@ import { NavLink as Link } from "react-router-dom";
 import { MdRestaurantMenu } from "react-icons/md";
 
 export const Nav = styled.nav`
-  background: #0d0909;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* z-index: 999; */
+  background: transparent;
   height: 80px;
   display: flex;
   justify-content: center;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 // import Navbar from "../Navbar";
 // import Sidebar from "../Sidebar";
 import {
@@ -24,7 +24,7 @@ const Hero = () => {
       <HeroContent>
         <HeroItems>
           <HeroH1>Delicious Pasta In Town</HeroH1>
-          <HeroP>Free Delivery Service</HeroP>
+          <HeroP>Life’s too short for boring food</HeroP>
           <HeroBtn>Place Order</HeroBtn>
         </HeroItems>
       </HeroContent>
