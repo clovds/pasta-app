@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { GlobalStyle } from "./globalStyles";
 import Footer from "./components/Footer";
-import { LandingPage } from "./pages";
 import Sidebar from "./components/Sidebar";
 import SidebarLogin from "./components/SidebarLogin";
+import { AnimatedRoutes, RouteTransition } from "./animation";
+import LandingPage from "./pages/LandingPage";
+import MenuPage from "./pages/MenuPage";
 
 class App extends Component {
   state = {
@@ -31,7 +32,14 @@ class App extends Component {
         />
         <Sidebar isOpen={this.state.isOpen} toggle={this.toggle} />
         <Navbar toggle={this.toggle} toggleLogin={this.toggleLogin} />
-        <Route path="/" exact component={LandingPage} />
+        <AnimatedRoutes exitBeforeEnter initial={false}>
+          <RouteTransition exact path="/" slideUp={100}>
+            <LandingPage />
+          </RouteTransition>
+          <RouteTransition path="/menu" slide={100}>
+            <MenuPage />
+          </RouteTransition>
+        </AnimatedRoutes>
         <Footer />
       </div>
     );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Bars, Nav, NavIcon, NavIcon2, NavLink } from "./NavbarElements";
 
 const Navbar = ({ toggle, toggleLogin }) => {
@@ -9,10 +10,12 @@ const Navbar = ({ toggle, toggleLogin }) => {
         <NavIcon2 onClick={toggleLogin}>
           <p>Login</p>
         </NavIcon2>
-        <NavIcon onClick={toggle}>
-          <p>Menu</p>
-          <Bars />
-        </NavIcon>
+        <Link to="/menu">
+          <NavIcon>
+            <p>Menu</p>
+            <Bars />
+          </NavIcon>
+        </Link>
       </Nav>
     </div>
   );
